@@ -41,7 +41,6 @@ function autoComplete() {
 
     const {email, message} = JSON.parse(getLocalStorage);
     
-    
     if (email) {
        inputEmailRef.value = email; 
     } 
