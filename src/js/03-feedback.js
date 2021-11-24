@@ -45,6 +45,7 @@ function autoComplete() {
     if (!getLocalStorage) {
         inputEmailRef.value = ""; 
         textAreaMessageRef.value = "";
+        return;
     }
 
     const { email, message } = JSON.parse(getLocalStorage);
@@ -61,7 +62,6 @@ function autoComplete() {
          textAreaMessageRef.value = ""; 
     }
     
-    console.log(getLocalStorage);
 }
 
 
